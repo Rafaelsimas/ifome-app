@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;600&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-app-login ">
+        <div class="login">
+                <img src="./assets/img/ifome-removebg-preview.png" alt="">
+                <input class="inputNome" type="text" placeholder="Entre com seu nome">
+                <button onclick="login()">Entrar</button>
+        </div>
+    </div>
+
+    <div class="app escondido"><!-- CONTEÚDO DA APLICAÇÃO -->
+        <div class="topo">
+            <div class="caixa">
+                <img src="./assets/img/ifome-removebg-preview.png" alt="">
+                <div class="user">
+                  <span>Olá</span>  <p class="userName">Rafael</p>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-pedidos">
+            <div class="titulo">Escolha seu prato</div>
+            <div class="opcoes pratos">
+                <div class="opcao contra-file" onclick="escolherPrato('contra-file')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Contra filé</div>
+                    <div class="valor">14,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+                <div class="opcao alcatra" onclick="escolherPrato('alcatra')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Contra filé</div>
+                    <div class="valor">14,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+                <div class="opcao picanha" onclick="escolherPrato('picanha')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Contra filé</div>
+                    <div class="valor">14,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="titulo">Escolha sua bebida</div>
+            <div class="opcoes bebidas">
+                <div class="opcao guarana-antartica" onclick="escolherBebida('guarana-antartica')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Guaraná Antartica</div>
+                    <div class="valor">4,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+                <div class="opcao fanta-laranja" onclick="escolherBebida('fanta-laranja')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Fanta laranha</div>
+                    <div class="valor">4,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+                <div class="opcao coca-cola" onclick="escolherBebida('coca-cola')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Coca-cola</div>
+                    <div class="valor">5,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="titulo">Escolha sua sobremesa</div>
+            <div class="opcoes sobremesa">
+                <div class="opcao pudim" onclick="escolherSobremesa('pudim')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Pudim</div>
+                    <div class="valor">3,50</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+                <div class="opcao mouse"  onclick="escolherSobremesa('mouse')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Mouse</div>
+                    <div class="valor">2,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+                <div class="opcao bolo-cenoura"  onclick="escolherSobremesa('bolo-cenoura')">
+                    <img src="https://t2.rg.ltmcdn.com/pt/posts/2/5/2/contra_file_no_forno_com_batatas_10252_600_square.jpg" alt="">
+                    <div class="descricao">Contra filé</div>
+                    <div class="valor">14,90</div>
+                    <ion-icon class="check escondido" name="checkbox-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <a href="#">Fazer pedido</a>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
