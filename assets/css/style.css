@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --container-yellow:#e6e3d4;
+    --button-bg:#f0721e;
+    --topo-menu:#e2b89b;
+}
+
+.escondido{
+    display: none;
+}
+
+.selecionado{
+    border: 3px solid green;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+   font-size: 1.2rem;
+   font-family: 'Poppins', sans-serif;
+}
+
+.bg-app-login{
+    background: var(--container-yellow);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.login{
+
+   padding-top: 8.9rem;
+   width: 90%;
+   max-width: 900px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   margin-inline: auto;
+}
+
+.login img{
+    width: 19rem;
+    margin-bottom: 1.9rem;
+}
+
+.login input, button{
+    width:100% ;
+    margin-bottom: 1.9rem;
+    padding: 1.9rem;
+    border: none;
+}
+
+.login input{
+    color: black;
+    font-weight: bold;
+}
+
+.login button{
+    background: var(--button-bg);
+    color: white;
+    font-weight: bold;
+}
+
+/* ======================APP================== */
+.app{
+    background: var(--container-yellow);
+    width: 100vw;
+    height: 100vh;
+}
+/* ======================APP================== */
+.topo{
+    width: 100%;
+    height: 93px;
+    background-color: var(--topo-menu);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.caixa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.caixa .user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.caixa span{
+    color: var(--button-bg);
+    font-weight: bold;
+}
+
+.caixa .userName{
+    font-weight: bold;
+}
+.caixa img{
+    width: 9.2rem;
+}
+
+.caixa ion-icon{
+    font-size: 2rem;
+    color: var(--button-bg);
+}
+/* =========================container-pedidos=================== */
+.container-pedidos{
+    margin-top: 8.9rem;
+    margin-bottom: 18.9rem;
+    margin-inline: auto;
+    width: 100%;
+    background: var(--container-yellow);
+}
+
+.opcoes{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+
+.opcao{
+    background: white;
+    height: 90%;
+    width: 100%;
+    padding: 1rem;
+    margin: 1.1rem;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.opcao .check{
+    position: absolute;
+    right: 1.5rem;
+    top: 24rem;
+    color: white;
+    padding: 0.1rem;
+    background-color: green;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.titulo {
+    margin: -0.4rem;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.9rem;
+    color: rgb(49, 49, 49);
+}
+
+.opcao img{
+height: 60%;
+border-radius: 8px;
+}
+
+.descricao, .valor{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+footer{
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background: var(--button-bg);
+    text-align: center;
+}
+
+footer a{
+    background: white;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: var(--button-bg);
+}
